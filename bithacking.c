@@ -40,3 +40,8 @@ b ^= a;
 a ^= b;
 // result is a, b
 
+// F8
+unsigned int v;
+int r;
+float f = (float)(v & -v);
+r = (*(uint32_t *)&f >> 23) - 0x7f;
