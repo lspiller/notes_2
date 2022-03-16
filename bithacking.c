@@ -40,3 +40,11 @@ c = (T)(v * ((T)~(T)0/255)) >> (sizeof(T) - 1) * CHAR_BIT;
 unsigned char b;
 int r = 
   (((b * 0x0101010101010101ULL) & 0x8040201008040201ULL) % 0x1FF) & 1;
+
+// F8
+int a, b
+a ^= b;
+b ^= a;
+a ^= b;
+// result is a, b
+
