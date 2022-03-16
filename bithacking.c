@@ -29,19 +29,11 @@ r += (((v & 0xfff000) >> 12) * 0x1001001001001ULL & 0x84210842108421ULL) %
 r += ((v >> 24) * 0x1001001001001ULL & 0x84210842108421ULL) % 0x1f;
 
 // F6
-unsigned int v; // v <  128 bits
-unsigned int r;
-unsigned int v = v - ((v >> 1) & (T)~(T)0/3);
-v = (v & (T)~(T)0/15*3) + ((v >> 2) & (T)~(T)0/15*3);
-v = (v + (v >> 4)) & (T)~(T)0/255*15;
-c = (T)(v * ((T)~(T)0/255)) >> (sizeof(T) - 1) * CHAR_BIT;
-
-// F7
 unsigned char b;
 int r = 
   (((b * 0x0101010101010101ULL) & 0x8040201008040201ULL) % 0x1FF) & 1;
 
-// F8
+// F7
 int a, b
 a ^= b;
 b ^= a;
