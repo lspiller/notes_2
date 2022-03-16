@@ -6,13 +6,11 @@ bool r = ((x ^ y) < 0);
 
 // F2
 int v;
-unsigned int r;
 int const mask = v >> sizeof(int) * CHAR_BIT - 1;
-r = (v + mask) ^ mask;
+unsigned int r = (v + mask) ^ mask;
 
 // F3
 int x;
-int y;   
-int r;
+int y;
 
-r = y ^ ((x ^ y) & -(x < y));
+int r = y ^ ((x ^ y) & -(x < y));
