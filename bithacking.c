@@ -2,7 +2,7 @@
 
 // F1
 int x, y;
-bool f = ((x ^ y) < 0);
+bool r = ((x ^ y) < 0);
 
 // F2
 int v;
