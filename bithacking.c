@@ -45,3 +45,15 @@ unsigned int v;
 int r;
 float f = (float)(v & -v);
 r = (*(uint32_t *)&f >> 23) - 0x7f;
+
+// F9
+unsigned int v; // 32-bit v
+
+v--;
+v |= v >> 1;
+v |= v >> 2;
+v |= v >> 4;
+v |= v >> 8;
+v |= v >> 16;
+v++;
+int r = v;
