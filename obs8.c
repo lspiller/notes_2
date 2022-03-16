@@ -1,6 +1,5 @@
 void send(char* to,  char* from,  int count) {
-	//register count;
-	{
+		register count;
 		register n = (count + 7) / 8;
 		switch (count % 8) {
 	    	case 0:
