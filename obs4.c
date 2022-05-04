@@ -4,4 +4,8 @@ int fun() {
              //*/ b
         	       ;
 }
-// Try this with c89 and c99 (--std c##)
+
+int main() {
+    return fun();
+}
+/* Try this with c89 and c99 (--std c##) */
